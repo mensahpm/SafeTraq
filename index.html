@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+      SafeTraq Photo Sheets
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js">
+</script>
+  </head>
+  <body>
+    <div id="container">
+      <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+      <!-- Add your site or application content here -->
+      <!-- Heading description -->
+      <h1>
+        SafeTraq
+      </h1>
+      <h3>
+        EHS Photo Sheet App
+      </h3>
+      <p>
+        Snap photos, add details, and send formatted photosheets
+        to your email all from your phone. Safety reporting
+        streamlined!
+      </p><!-- Form begins-->
+      <form action="server.cgi" method="post" enctype=
+      "multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Upload">
+        <br>
+        <!--This is the rest of the form info-->
+         Customer: <input type="text" name="customer">
+        <br>
+        Location: <input type="text" name="location">
+        <br>
+        Date: <input type="text" name="date">
+        <br>
+        <!--This code asks the browser to turn on the camera! 
+              <video id="video" width="320" height="240" autoplay></video>
+              <br><button id="snap">Snap Photo</button>
+              <canvas id="canvas" width="320" height="240"></canvas> -->
+         Notes: <input type="text" name="notes">
+        <br>
+        Send: <input type="submit" value="Send!">
+        <br>
+      </form><!--This is the JQuery-->
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js">
+	  </script> 
+	  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+      </script> 
+	  <script src="js/plugins.js">
+	  </script> 
+	  <script src="js/main.js">
+</script>
+    </div>
+    <footer>
+      <h4>
+        SafeTraq by Priscilla M. Mensah
+      </h4>
+    </footer>
+  </body>
+</html>
